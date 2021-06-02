@@ -1,8 +1,9 @@
 import React from 'react'
-import Input from './Input'
+import Reducer from './Reducer'
+
 
 const Home = () => {
-    return <div> <Input/> </div>
+    return <div> <Reducer/> </div>
 }
 
 export default Home;
