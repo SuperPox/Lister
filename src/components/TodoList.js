@@ -2,9 +2,10 @@ import React from 'react';
 
 class TodoList extends React.Component {
   render() {
+    console.log("TodoList", this.props.todos)
     return (
     <div className="listWrapper">
-        <ul className="taskList">
+        <ul className="taskList">           
             {this.props.todos.map((todo) => {
                 return(
                 <li className="task" todo={todo} key={todo.id}>

@@ -7,7 +7,7 @@ export default function NavBar() {
     const history = useHistory()
     return (
         <div>      
-            <button onClick={() => history.push("/home")}> Home </button>     
+            <button onClick={() => history.push("/home")}> Donate </button>     
             <button onClick={() => history.push("/about")}> About </button>
             <button onClick={() => history.push("/contact")}> Contact </button>
             

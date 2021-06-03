@@ -6,7 +6,7 @@ import TodoList from './TodoList'
 class AllTodos2 extends Component {   
   
   componentDidMount() {
-    console.log("ALL TODOS2: component did mount")
+    console.log("ALL2: component did mount")
     this.props.fetchTodos()
   }
   
@@ -14,7 +14,7 @@ class AllTodos2 extends Component {
     if(this.props.loading) {
       return <div>Loading...</div>
     } else {
-      console.log("ALLTODOS2: finished loading, building list ")      
+      console.log("ALL2: building list")   
       return <TodoList todos={this.props.todos} />
     }
   }
@@ -32,6 +32,8 @@ class AllTodos2 extends Component {
 }
 
 const mapDispatchToProps = state => {
+  console.log("ALL2: mapDispatch")
+  console.log(state)
   return {
     todos: state.todos,
     loading: state.loading

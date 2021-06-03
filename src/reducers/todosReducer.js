@@ -12,6 +12,12 @@ const todosReducer = (state = { todos: [], loading: false }, action) => {
         todos: action.todos,
         loading: false
       }
+    case 'ADD_SINGLE':
+      return {
+        ...state,
+        todos: [...state.todos, ...action.todos],
+        loading: false
+      }
     default:
       return state;
   }
@@ -20,3 +26,4 @@ const todosReducer = (state = { todos: [], loading: false }, action) => {
 export default todosReducer;
 
 //action.todos has the shit
+//return [...todos, newTodo(action.payload.name)]
