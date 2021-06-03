@@ -22,7 +22,10 @@ class AllTodos2 extends Component {
   render() {
     return (
       <div className="App">
-        {this.handleLoading()}
+        <div>
+            {this.handleLoading()}
+        </div>
+        
       </div>
     );
   }
