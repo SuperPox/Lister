@@ -5,7 +5,6 @@ export const ACTIONS = {
     ADD_TODO: 'add-todo',
     TOGGLE_TODO: 'toggle-todo',
     DELETE_TODO: 'delete-todo',
-    EDIT_TODO: 'edit-todo'
 }
 
 
@@ -45,8 +44,6 @@ export default function Reducer(){
             dispatch({type: ACTIONS.ADD_TODO, payload: {name: name}})
             setName('')
         }
-
-
     }
 
     return (
