@@ -8,4 +8,3 @@ export default function deleteTodo(todo, justID) {
     }
 }
 
-//action is undefined

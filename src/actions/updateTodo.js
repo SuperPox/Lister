@@ -9,6 +9,3 @@ export default function updateTodo(todo, justID, checkChange) {
     }
 }
 
-//this.props.updateTodo(todo, justID, checkChange)
-//dispatch({ type: 'ADD_TODOS', todos: responseJSON })
-//.then(todo => dispatch({type: "UPDATE_SINGLE", todos: justID}))

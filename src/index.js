@@ -27,4 +27,3 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// import catsReducer from './reducers/catsReducer.js';

@@ -47,13 +47,5 @@ class TodoList extends React.Component {
   }
 }
 
-//export default TodoList;
-
 export default (connect(null, {deleteTodo: deleteTodo, updateTodo: updateTodo })(TodoList))
 
-/*
-console.log('handling update on ID: ', todo.id, !todo.done, '/ sending to action')
-const justID = todo.id
-const checkChange = !todo.done
-this.props.updateTodo(todo, justID, checkChange)  
-*/
