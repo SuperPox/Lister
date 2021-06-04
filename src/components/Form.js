@@ -2,11 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import addTodo from '../actions/addTodo'
 
-export class Form extends Component {
-
-    
-    
-    
+export class Form extends Component { 
     
     createTodo = (e) => {
         if (e.key === 'Enter' && e.target.value !== ""){
@@ -14,7 +10,8 @@ export class Form extends Component {
             const title = e.target.value
             const todo = {id: 777, title: title, done: false}
             console.log("send to: addTodoAction")
-            this.props.addTodo(todo)                      
+            this.props.addTodo(todo)    
+            e.target.value = ''                  
         }
     }
 

@@ -32,8 +32,7 @@ class AllTodos2 extends Component {
 }
 
 const mapDispatchToProps = state => {
-  console.log("ALL2: mapDispatch")
-  console.log(state)
+  console.log("ALL2: mapDispatch / state: ", state)
   return {
     todos: state.todos,
     loading: state.loading
