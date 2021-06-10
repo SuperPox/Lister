@@ -32,16 +32,5 @@ export class Form extends Component {
     }
 }
 
-/*
-const mapDispatchToProps = (dispatch) => {
-    return {
-        addTodo: function(todo) { dispatch({type: "ADD_TODOS", payload: todo}) },
-        deleteTodo: function(todo) { dispatch({type: "DELETE_TODOS", payload: todo}) }
-    }
-
-}
-*/
-
 export default (connect(null, {addTodo: addTodo})(Form))
 
-//this.props.dispatch({type: "ADD_TODOS", payload: todo})

@@ -14,7 +14,7 @@ class AllTodos2 extends Component {
     if(this.props.loading) {
       return <div>Loading...</div>
     } else {
-      console.log("ALL2: building list")   
+      console.log("ALL2: updating todos")   
       return <TodoList todos={this.props.todos} />
     }
   }
@@ -24,19 +24,20 @@ class AllTodos2 extends Component {
       <div className="App">
         <div>
             {this.handleLoading()}
-        </div>
-        
+        </div>        
       </div>
     );
   }
 }
 
-const mapDispatchToProps = state => {
-  console.log("ALL2: mapDispatch / state: ", state)
+const mapStateToProps = state => {
   return {
     todos: state.todos,
     loading: state.loading
   }
 }
 
-export default connect(mapDispatchToProps, { fetchTodos })(AllTodos2)
+// my actions function as async DispatchToProps
+
+export default connect(mapStateToProps, { fetchTodos })(AllTodos2)
+

@@ -18,7 +18,7 @@ export default function NavBar() {
                 <Route path="/contact">
                     <Contact />
                 </Route>
-                <Route path="/home">
+                <Route path="/home" exact>
                     <Home />
                 </Route>               
             </Switch>
@@ -26,3 +26,5 @@ export default function NavBar() {
         </div>
     )
 }
+
+// home/:id  <link> /home/${todo.id}  

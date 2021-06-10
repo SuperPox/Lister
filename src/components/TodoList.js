@@ -20,9 +20,6 @@ class TodoList extends React.Component {
     this.props.updateTodo(todo, justID, checkChange)       
   }
   
-
-
-
   render() {
     console.log("TodoList", this.props.todos)
     return (
